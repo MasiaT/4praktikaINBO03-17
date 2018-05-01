@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int *ukaz;
+	int a;
+	int b;
+	ukaz = new int[12];
+	for (int i=0; i<12;i++){
+		cin >> ukaz[i];
+		
+	}
+	for (int i=0; i<12;i=i+2){
+		swap(ukaz[i],ukaz[i+1]);
+	}
+	for (int i=0; i<12;i++){
+		cout << ukaz[i] << " ";
+	}
+	system("pause");
+	return 0;
+}
